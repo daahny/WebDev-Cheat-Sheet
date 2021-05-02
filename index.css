@@ -1,0 +1,81 @@
+@charset "utf-16";
+
+
+
+/* Document Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('./Images/wallpaper.jpg');
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+
+
+/* Navigation bar Styling */
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Drop-down menu styling */
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul li {
+    padding: 5px;
+    width: 100%;
+}
+
+nav ul li ul li a {
+    display: block;
+    width: 100%;
+    text-shadow: none;
+}
+
+nav ul li ul li a:hover{
+    background-color:rgba(200, 200, 200, 0.25);
+    text-shadow: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.25);
+    border-radius: 0px 0px 5px 5px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+/* Hyperlink Styling */
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    font-weight: 700;
+    text-shadow: black 4px 4px 30px;
+}
+
+nav ul li a:visited {
+    color: black;
+}
