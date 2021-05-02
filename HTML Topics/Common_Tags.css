@@ -1,0 +1,49 @@
+@import url("../header.css");
+
+aside {
+    float: right;
+    background-color: #d838f7;
+    width: 25%;
+}
+
+aside h2 {
+    text-align: center;
+    line-height: 3em;
+}
+
+aside p {
+    padding: 1vw;
+}
+
+main {
+    margin: 0 auto;
+    width: 95%;
+    background-color: #2a1b3de0;
+}
+
+main article {
+    padding: 0 1vw;
+}
+
+article h2 {
+    padding: 1% 0%;
+}
+
+article a {
+    color: #e98074;
+}
+
+article a:hover, article a:active {
+    text-shadow: #e98074 2px 2px 15px;
+    text-decoration: none;
+}
+
+article a:visited {
+    color: #e98074;
+}
+
+hr.line {
+    border: solid 2px white;
+    display: block;
+    width: 100%;
+}
