@@ -4,7 +4,7 @@
     <meta charset="utf-16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="HTML_Tables.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -12,23 +12,198 @@
 
 <body>
     <header>
-        <h1>HTML Tables</h1>
+        <a href="../index.html"><img src="../Images/home-icon.png" alt="Home"></a>
+        <nav>
+            <ul>
+                <li><a href="#">HTML</a>
+                <ul>
+                    <li><a href="Common_Tags.html">Common Tags</a></li>
+                    <li><a href="#">HTML Tables</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#">CSS</a>
+                    <ul id="css_container">
+                        <li class="item"><a href="#">Box Model</a></li>
+                        <li class="item"><a href="#">CSS Positioning</a></li>
+                        <li class="item"><a href="#">Fonts and Text</a></li>
+                        <li class="item"><a href="#">Flex Boxes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Javascript</a></li>
+            </ul>
+        </nav>
     </header>
 
 
     <main>
-        <article>
-            <h3>Table Elements</h3>
-            <p>Tables are </p>
-        </article>
-
-
-
-        <table>
+        <table id="elements">
+            <caption><h1>Table Elements</h1></caption>
             <thead>
-                <th></th>
+                <th scope="col">Element</th>
+                <th scope="col">Description</th>
+                <!-- <th scope="col"></th> -->
+                
             </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">&lt;table&gt;</th>
+                    <td>Marks a table</td>
+                </tr>
+                <tr>
+                    <th scope="row">&lt;thead&gt;</th>
+                    <td>Marks a table header, contains headings marked by &lt;th&gt;</td>
+                </tr>
+                <tr>
+                    <th scope="row">&lt;tbody&gt;</th>
+                    <td>Marks table content, where tr&gt;s are placed</td>
+                </tr>
+                <tr>
+                    <th scope="row">&lt;tfoot&gt;</th>
+                    <td>Marks a table footer</td>
+                </tr>
+                <tr>
+                    <th scope="row">&lt;th&gt;</th>
+                    <td>Marks a table heading, used in &lt;thead&gt; and tr&gt;</td>
+                </tr>
+                <tr>
+                    <th scope="row">&lt;tr&gt;</th>
+                    <td>Marks a table row</td>
+                </tr>
+                <tr>
+                    <th scope="row">&lt;td&gt;</th>
+                    <td>Marks a table data entry</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th><pre>&lt;caption&gt;</pre></th>
+                    <td>Marks the table title</td>
+                </tr>
+            </tfoot>
         </table>
+
+        <table id="attributes">
+            <caption><h1>Table Attributes</h1></caption>
+            <thead>
+                <th scope="col">Attribute</th>
+                <th scope="col">Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">scope</th>
+                    <td>Defines what a <pre>&lt;th&gt;</pre>will encompass; <pre>row</pre> means the <pre>&lt;th&gt;</pre> will be a row header</td>
+                </tr>
+                <tr>
+                    <th scope="row">rowspan</th>
+                    <td>Defines how many rows a <pre>&lt;td&gt;</pre>will span</td>
+                </tr>
+                <tr>
+                    <th scope="row">colspan</th>
+                    <td>Defines how many columns a <pre>&lt;tds&gt;</pre>will span</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section>
+            <article>
+                <h1>Example</h1>
+                <div id="code_example">
+                    <pre>
+&lt;table id="table_example"&gt;
+<span id="thead_open">&lt;thead&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="th_open">&lt;th</span> scope="col"<span id="th_open">&gt;</span>Company Name<span id="th_close">&lt;/th&gt</span>;
+        <span id="th_open">&lt;th</span> scope="col"<span id="th_open">&gt;</span>Number of Items to Ship<span id="th_close">&lt;/th&gt</span>;
+        <span id="th_open">&lt;th</span> scope="col"<span id="th_open">&gt;</span>Next Action<span id="th_close">&lt;/th&gt</span>;
+    <span id="tr_close">&lt;/tr&gt;</span>
+<span id="thead_close">&lt;/thead&gt;</span>
+<span id="tbody_open">&lt;tbody&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Adam's Greenworks<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>14<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Package Items<span id="td_close">&lt;/td&gt;</span>
+    <span id="tr_close">&lt;/tr&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Davie's Burgers<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>2<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Send Invoice<span id="td_close">&lt;/td&gt;</span>
+    <span id="tr_close">&lt;/tr&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Baker's Bike Shop<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td</span> colspan="2"<span id="td_open">&gt;</span>3<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Send Invoice<span id="td_close">&lt;/td&gt;</span>
+    <span id="tr_close">&lt;/tr&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Miss Sally's Southern<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td</span> rowspan="2"<span id="td_open">&gt;</span>4<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Ship<span id="td_close">&lt;/td&gt;</span>
+    <span id="tr_close">&lt;/tr&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Summit Resort Rentals<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>4<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Ship<span id="td_close">&lt;/td&gt;</span>
+    <span id="tr_close">&lt;/tr&gt;</span>
+    <span id="tr_open">&lt;tr&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Strike Fitness<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>1<span id="td_close">&lt;/td&gt;</span>
+        <span id="td_open">&lt;td&gt;</span>Enter Order<span id="td_close">&lt;/td&gt;</span>
+    <span id="tr_close">&lt;/tr&gt;</span>
+<span id="tbody_close">&lt;/tbody&gt;</span>
+<span id="tfoot_open">&lt;tfoot&gt;</span>
+    <span id="td_open">&lt;td&gt;</span>Total<span id="td_close">&lt;/td&gt;</span>
+    <span id="td_open">&lt;td&gt;</span>28<span id="td_close">&lt;/td&gt;</span>
+<span id="tfoot_close">&lt;/tfoot&gt;</span>
+&lt;/table&gt;
+                    </pre>
+                </div>
+                <table id="table_example">
+                    <thead>
+                        <tr>
+                            <th scope="col">Company Name</th>
+                            <th scope="col">Number of Items to Ship</th>
+                            <th scope="col">Next Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adam's Greenworks</td>
+                            <td>14</td>
+                            <td>Package Items</td>
+                        </tr>
+                        <tr>
+                            <td>Davie's Burgers</td>
+                            <td>2</td>
+                            <td>Send Invoice</td>
+                        </tr>
+                        <tr>
+                            <td>Baker's Bike Shop</td>
+                            <td colspan="2">3</td>
+                            <td>Send Invoice</td>
+                        </tr>
+                        <tr>
+                            <td>Miss Sally's Southern</td>
+                            <td rowspan="2">4</td>
+                            <td>Ship</td>
+                        </tr>
+                        <tr>
+                            <td>Summit Resort Rentals</td>
+                            <td>4</td>
+                            <td>Ship</td>
+                        </tr>
+                        <tr>
+                            <td>Strike Fitness</td>
+                            <td>1</td>
+                            <td>Enter Order</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td>Total</td>
+                        <td>28</td>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
     </main>
     
 </body>

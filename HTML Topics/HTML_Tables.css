@@ -1,0 +1,106 @@
+@import url('../header.css');
+
+/* Table Styling */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    border: solid 2px white;
+    border-collapse: collapse; /* Collapses borders so as to not create a double lined table */
+    display: inline-block;
+}
+
+table#elements {
+    float: left;
+}
+
+table#attributes {
+    float: right;
+}
+
+table h1 {
+    font-weight: 600;
+}
+
+table :not(caption, pre) {
+    border: solid 2px white;
+    padding: 1vw 1vh;
+}
+
+tbody tr th {
+    font-family: monospace;
+}
+
+pre {
+    display: inline;
+}
+
+table {
+    max-width: 50%;
+}
+
+caption {
+    font-size: 0.85em;
+}
+
+
+
+/* Example article styling */
+article {
+    clear: both;
+    padding-top: 10vh;
+}
+
+article h1 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#table_example {
+    max-width: 50%;
+    float: right;
+}
+
+#code_example {
+    background-color: black;
+    max-width: 50%;
+    float: left;
+}
+
+
+/* Code Example Coloring */
+span#th_open, span#th_close {
+    color: pink;
+    font-weight: 900;
+}
+
+span#tr_open, span#tr_close {
+    color: rgb(108, 194, 223);
+    font-weight: 900;
+}
+
+span#td_open, span#td_close {
+    color: lightgreen;
+    font-weight: 900;
+}
+
+span#tbody_open, span#tbody_close {
+    color: magenta;
+    font-weight: 900;
+}
+
+span#thead_open, span#thead_close {
+    color: orange;
+    font-weight: 900;
+}
+
+span#tfoot_open, span#tfoot_close {
+    color: red;
+    font-weight: 900;
+}
+
+
