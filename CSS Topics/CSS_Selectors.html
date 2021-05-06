@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" value="width=device-width, initial-scale=1.0"/>
+    <title>CSS Selectors</title>
+    <link href="CSS_Selectors.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../Images/home-icon.png" alt="Home"></a>
+        <nav>
+            <ul>
+                <li><a href="#">HTML</a>
+                <ul>
+                    <li><a href="../HTML Topics/Common_Tags.html">Common Tags</a></li>
+                    <li><a href="../HTML Topics/HTML_Tables.html">HTML Tables</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#">CSS</a>
+                    <ul id="css_container">
+                        <li class="item"><a href="#">CSS Selectors</a></li>
+                        <li class="item"><a href="#">Box Model</a></li>
+                        <li class="item"><a href="#">CSS Positioning</a></li>
+                        <li class="item"><a href="#">Fonts and Text</a></li>
+                        <li class="item"><a href="#">Flex Boxes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>CSS Selectors</h1>
+        <table>
+            <thead>
+                <th scope="col">Selector</th>
+                <th scope="col">Example</th>
+                <th scope="col">Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="selector">.class</td>
+                    <td class="example">.container</td>
+                    <td class="description">Selects all elements part of the container class</td>
+                </tr>
+                <tr>
+                    <td class="selector">#id</td>
+                    <td class="example">#alpha</td>
+                    <td class="description">Selects all elements with an id of alpha</td>
+                </tr>
+                <tr>
+                    <td class="selector">element element</td>
+                    <td class="example">div p</td>
+                    <td class="description">Selects all &lt;p&gt; elements inside &lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td class="selector">element > element</td>
+                    <td class="example">div > p</td>
+                    <td class="description">Selects all &lt;p&gt; elements with a direct parent of &lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td class="selector">element + element</td>
+                    <td class="example">div p</td>
+                    <td class="description">Selects the first &lt;p&gt; element placed after all &lt;div&gt; elements</td>
+                </tr>
+                <tr>
+                    <td class="selector">element ~ element</td>
+                    <td class="example">p ~ ul</td>
+                    <td class="description">Selects every &lt;ul&gt; element that preceeds a &lt;p&gt; element</td>
+                </tr>
+                <tr>
+                    <td class="selector">element, element</td>
+                    <td class="example">div, p</td>
+                    <td class="description">Selects &lt;div&gt; and &lt;p&gt; elements1</td>
+                </tr>
+                <tr>
+                    <td class="selector">[attribute]</td>
+                    <td class="example">[target]</td>
+                    <td class="description">Selects all elements with a target attribute</td>
+                </tr>
+                <tr>
+                    <td class="selector">[attribute]</td>
+                    <td class="example">[target=_blank]</td>
+                    <td class="description">Selects all elements with a target attribute equal to _blank</td>
+                </tr>
+                <tr>
+                    <td class="selector">*</td>
+                    <td class="example">*</td>
+                    <td class="description">Selects all elements</td>
+                </tr>
+                <tr>
+                    <td class="selector">::after | ::before</td>
+                    <td class="example">p::before</td>
+                    <td class="description">Selects just before every &lt;p&gt; element. Used to add content.</td>
+                </tr>
+                <tr>
+                    <td class="selector">:not(selector)</td>
+                    <td class="example">:not(p)</td>
+                    <td class="description">Selects every element that's not a &lt;p&gt; element</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

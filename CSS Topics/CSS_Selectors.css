@@ -1,0 +1,41 @@
+@import url('../header.css');
+
+
+/* Document Styling */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    bottom: 1.5vw;
+}
+
+table{
+    border: solid 2px white;
+    border-collapse: collapse; /* Collapses borders so as to not create a double lined table */
+    margin: 0 auto;
+}
+
+table * {
+    border: solid 2px white;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+th, td {
+    padding: 2vh 2vw;
+}
+
+.selector {
+    font-style: italic;
+    text-align: center;
+}
+
+.example {
+    font-family: monospace;
+    font-weight: normal;
+    text-align: center;
+}
