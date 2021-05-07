@@ -1,0 +1,62 @@
+@import url('../Index/global_styles.css');
+
+* {
+    line-height: 1.5;
+}
+
+/* h1 styling */
+h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+
+/* Image styling */
+img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+p#caption {
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+
+p#caption span#border {
+    border: solid 1px white;
+}
+
+
+/* CSS Units Float Styling */
+div#css_units {
+    float: right;
+    margin: 0 2vw;
+    background-color: #d83f86;
+    border-radius: 4px;
+    max-width: 50%;
+}
+
+div#css_units > * {
+    padding: 1%;
+}
+
+
+/* Text Styling */
+section {
+    line-height: 1.5;
+    font-size: 1.009em;
+}
+
+article {
+    background-color: rgb(0, 0, 0);
+    max-width: 50%;
+    float: left;
+    border-radius: 4px;
+}
+
+article div {
+    padding: 1%;
+}

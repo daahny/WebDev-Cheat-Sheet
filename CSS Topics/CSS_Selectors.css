@@ -1,4 +1,4 @@
-@import url('../header.css');
+@import url('../Index/global_styles.css');
 
 
 /* Document Styling */
@@ -9,8 +9,7 @@ main {
 
 h1 {
     text-align: center;
-    position: relative;
-    bottom: 1.5vw;
+    margin-bottom: 2vh;
 }
 
 table{

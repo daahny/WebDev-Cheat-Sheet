@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS_Box_Model.css" rel="stylesheet" />
+    <title>CSS Box Model</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript" src="../header_and_footer/header.js"></script>
+    
+    <main>
+        <h1>CSS Box Model</h1>
+        <img src="../Images/boxmodel.png" alt="Failed to load box model photo" />
+        <p id="caption">Every single element in an HTML document is modeled as a box. This can be seen by applying a <span id="border">border</span> to any element.</p>
+        <br>
+        <section>
+            <article>
+                <div id="box_model_areas">
+                    <ul>
+                        <h3>4 Areas of the box model</h3>
+                        <li><strong>Content: </strong>The content is the actual content of the HTML element.</li>
+                        <li><strong>Padding: </strong>The padding defines the space between the content and the border.</li>
+                        <li><strong>Border: </strong>The border is a line that surrounds the content and padding.</li>
+                        <li><strong>Margin: </strong>The margin is the space encapsulating the border, padding, and content. This collapses vertically with other margins.</li>
+                    </ul>
+                </div>
+                <div id="box_model_elements">
+                    <ul>
+                        <h3>Box Model Elements</h3>
+                        <li><strong>padding: </strong><em>top right bottom left</em></li>
+                        <li><strong>border: </strong><em>style size color</em></li>
+                        <li><strong>margin: </strong><em>top right bottom left</em></li>
+                    </ul>
+                </div>
+            </article>
+            <div id="css_units">
+                <h3>Absolute Units</h3>
+                <ul>
+                    <li><strong>cm: </strong>centimeters</li>
+                    <li><strong>mm: </strong>millimeters</li>
+                    <li><strong>in: </strong>inches</li>
+                    <li><strong>px: </strong>pixels (1/96 of 1 in)</li>
+                    <li><strong>pt: </strong>pt (1/72 of 1 in)</li>
+                    <li><strong>pc: </strong>picas (12 pt)</li>
+                </ul>
+                <h3>Relative Units</h3>
+                <ul>
+                    <li><strong>em: </strong>Relative to the font-size of the element</li>
+                    <li><strong>rem: </strong>Relative to the root element font-size</li>
+                    <li><strong>vw: </strong>Relative to 1% of the width of the viewport*</li>
+                    <li><strong>vh: </strong>Relative to 1% of the height of the viewport*</li>
+                </ul>
+                <em>*Viewport = browser window size*</em>
+                <br>
+                <em>*A viewport of 50cm wide, 1vw = 0.5cm*</em>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

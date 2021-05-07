@@ -1,0 +1,5 @@
+background-images
+
+opacity: 0-1
+
+text and box shadows
