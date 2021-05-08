@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link href="CSS_Positioning.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript" src="../header_and_footer/header.js"></script>
+
+    <main>
+        <h1>CSS Positioning</h1>
+        <article>
+            <section id="one">
+                <h2>Positioning</h2>
+                <ul>
+                    <li><strong><pre>Static</pre></strong>Static positioning is the default position for elements. 
+                        <wbr>Statically positioned elements are a part of the document flow and aren't moved with CSS properties. </li>
+                    <li><strong><pre>Relative</pre></strong>Relative positioning is used to nudge an element out of its normal position. 
+                        <wbr>The element is still a part of document flow and isn't ignored by other elements.</li>
+                    <li><strong><pre>Absolute</pre></strong>Absolute positioning is also used to nudge an element out of its normal position. 
+                        <wbr>However, when an element is absolutely positioned, it leaves document flow and is ignored by other elements. 
+                        <wbr>Absolutely positioned elements positioned relative to the next parent container with a positioning other than static. 
+                        <wbr>If every parent container is statically positioned, the absolutely positioned element is positioned based on the root &lt;html&gt; element.</html></li>
+                    <li><strong><pre>Fixed</pre></strong>Fixed positioning positions an element relative to the root &lt;html&gt; element. 
+                        <wbr>The element is stuck on one position on the page and does not move, regardless of scrolling. 
+                        <wbr>Note, Fixed elements are removed from document flow.</li>
+                    <li><strong><pre>Sticky</pre></strong>Sticky positioning keeps an element in document flow. 
+                        <wbr> It sticks an element to a specified offset once a page scrolls to that offset.</li>
+                    <!-- <li><strong></strong></li> -->
+                </ul>
+                <h2>Elements</h2>
+                <ul>
+                    <li><strong><pre>z-index</pre></strong>Specifies the appearance of an element when it overlaps with another using CSS positioning</li>
+                    <li><strong><pre>top</pre></strong>Specifies offset (using CSS units) from the top</li>
+                    <li><strong><pre>right</pre></strong>Specifies offset (using CSS units) from the right</li>
+                    <li><strong><pre>bottom</pre></strong>Specifies offset (using CSS units) from the bottom</li>
+                    <li><strong><pre>left</pre></strong>Specifies offset (using CSS units) from the left</li>
+                </ul>
+            </section>
+            <div id="vl"></div>
+            <section id="two">
+                <h2>Display Types</h2>
+                <ul>
+                    <li><strong><pre>Inline</pre></strong>Elements that have a box that wraps tighly around their content.
+                        <wbr>They don't take a new line and are not affected by CSS width & height properties.</li>
+                    <li><strong><pre>Block</pre></strong>Elements that are not displayed on the same line as other elements.
+                        <wbr>They take up the entire width of the page and are as tall as necessary to accomdate their content.</li>
+                    <li><strong><pre>Inline-block</pre></strong>Elements that are displayed inline with eachother, but behave as a block.
+                        <wbr>Width and height properties affect these elements, but again, are displayed inline with other elements.</li>
+                </ul>
+            </section>
+            <div id="vl"></div>
+            <section id="three">
+                <h2>Floating</h2>
+                <ul>
+                    <li><strong><pre>Float</pre></strong>Elements can be floated to the side of other elements within a container.
+                        <wbr>This is done using the float property, and is typically used to wrap text around an image.</li>
+                    <li><strong><pre>Clear</pre></strong>CSS provides a feature that prevents floating elements from being displayed
+                        <wbr>inline with eachother. The specified value defines what margin needs to be clear of floats. 
+                        <wbr>(<pre id="code">left, right, both</pre>)</li>
+                    <li><strong><pre></pre></strong></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
+
+<!-- z-index
+     top, right, bottom, left -->

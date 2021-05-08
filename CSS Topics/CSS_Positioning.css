@@ -1,0 +1,46 @@
+@import url('../Index/global_styles.css');
+
+/* Document styling */
+
+h1, h2 {
+    text-align: center;
+    padding: 1%;
+}
+
+main {
+    background-color: black;
+    width: 95%;
+    margin: 0 auto;
+}
+
+section {
+    float: left;
+    width: 33.33%;
+    margin: 0 auto;
+    line-height: 1.75;
+    padding: 1.5%;
+}
+
+
+/* Text and formatting styling */
+strong, pre:not(#code) {
+    display: block;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+pre#code {
+    display: inline;
+}
+
+
+
+
+
+/* Avoids container collapse by inserting an empty web table after both margins are clear of floating elements */
+article::after {
+    clear: both;
+    content: "";
+    display: table;
+}
