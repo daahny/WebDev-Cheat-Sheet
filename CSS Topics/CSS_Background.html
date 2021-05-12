@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS_Background.css" rel="stylesheet" />
+    <title>CSS Backgrounds</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript" src="../header_and_footer/header.js"></script>
+    
+    <h1>CSS Backgrounds</h1>
+    <main>
+        <article>
+
+            <div class="element">
+                <aside class="example"><pre>div {
+    background-color: black;
+    opacity: 0.3;
+}</pre></aside>
+                <h2><pre>background-color: <em>color</em>;</pre></h2>
+                <p>Specifies the background color of an element</p>
+                <p>This can be used in conjunction with <code>opacity: 0-1;</code></p>
+            </div>
+
+            <div class="element">
+                <aside class="example"><pre>div {
+    background-image: url('panda.png');
+}</pre></aside>
+                <h2><pre>background-image: url('<em>image_location</em>');</pre></h2>
+                <p>Specifies an image to use as the background of an element</p>
+            </div>
+
+            <div class="element">
+                <aside class="example"><pre>div {
+    background-repeat: no-repeat;
+}</pre></aside>
+                <h2><pre>background-repeat: <em>repeat/no-repeat</em>;</pre></h2>
+                <p>Specifies if an image is repeated or not</p>
+                <p>Possible values are <code>repeat, no-repeat, repeat-x, repeat-y</code></p>
+            </div>
+
+            <div class="element">
+                <aside class="example"><pre>div {
+    background-position: right top;
+}</pre></aside>
+                <h2><pre>background-position: <em>horizontal vertical</em>;</pre></h2>
+                <p>Specifies the starting position of a background image</p>
+                <p>horizontal values include <code>left center right</code></p>
+                <p>vertical values include <code>top center bottom</code></p>
+
+            </div>
+
+            <div class="element">
+                <aside class="example"><pre>div {
+    background-attachment: fixed;
+}</pre></aside>
+                <h2><pre>background-attachment: <em>attachment</em>;</pre></h2>
+                <p>Specifies whether a background image scrolls with the rest of the page</p>
+                <p>values are <code>scroll (default), fixed</code></p>
+            </div>
+
+            <div class="element">
+                <aside class="example"><pre>div {
+    background: color url('') 
+                repeat contain 
+                right top fixed;
+}</pre></aside>
+                <h2><pre>background: <em>everything</em>;</pre></h2>
+                <p>Shorthand notation for all background properties</p>
+            </div>
+
+        </article>
+    </main>
+</body>

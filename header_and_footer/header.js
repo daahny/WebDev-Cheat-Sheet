@@ -11,6 +11,7 @@ document.write('<header>\
             <li><a href="#">CSS</a>\
                 <ul id="css_container">\
                     <li class="item"><a href="../CSS Topics/CSS_Box_Model.html">Box Model</a></li>\
+                    <li class="item"><a href="../CSS Topics/CSS_Background.html">CSS Backgrounds</a></li>\
                     <li class="item"><a href="../CSS Topics/CSS_Selectors.html">CSS Selectors</a></li>\
                     <li class="item"><a href="../CSS Topics/CSS_Positioning.html">CSS Positioning</a></li>\
                     <li class="item"><a href="../CSS Topics/Flex_Boxes.html">Flex Boxes</a></li>\

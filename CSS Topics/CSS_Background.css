@@ -1,0 +1,56 @@
+@import url('../Index/global_styles.css');
+
+
+/* Document/text styling */
+main {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.753);
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5vh;
+}
+
+code, pre {
+    display: inline;
+    font-size: 1.25em;
+}
+
+
+/* Display article as a flex box */
+article {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* div.element styling */
+div.element {
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    padding: 10px;
+    flex: 1 1 15vh;
+}
+
+div.element > :not(h2) {
+    padding-left: 30px;
+}
+
+
+/* Float styling */
+aside.example {
+    float: right;
+    background-color: #2a1b3d;
+    color: #d83f87;
+    border-radius: 10px;
+    width: 30%;
+}
+
+aside.example pre {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+}
